@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+</head>
+
+<body>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <header class="navbar flex">
+                <a href="#">
+                    <figure>
+                        <img src="images/logo.svg" alt="loopstudios">
+                    </figure>
+                </a>
+                <nav class="menu flex md">
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Events</a>
+                    <a href="#">Products</a>
+                    <a href="#">Support</a>
+                </nav>
+                <div class="menu-mobile sm">
+                    <button id="open" onclick="toggleMobileMenu(true)" class="toggle-button">
+                        <span class="icon-hamburger"></span>
+                    </button>
+                    <aside id="mobileAside">
+                        <div class="container">
+                            <header class="flex flex-row">
+                                <a href="#">
+                                    <figure>
+                                        <img src="images/logo.svg" alt="loopstudios">
+                                    </figure>
+                                </a>
+                                <button id="close" onclick="toggleMobileMenu(false)" class="toggle-button">
+                                    <span class="icon-close"></span>
+                                </button>
+                            </header>
+                            <nav class="menu flex flex-col">
+                                <a href="#">About</a>
+                                <a href="#">Careers</a>
+                                <a href="#">Events</a>
+                                <a href="#">Products</a>
+                                <a href="#">Support</a>
+                            </nav>
+                        </div>
+                    </aside>
+                </div>
+            </header>
+
+            <h1 class="content">Immersive experiences that deliver</h1>
+        </div>
+    </section>
+
+    <!-- LEADER -->
+    <section id="leader" class="leader">
+        <div class="container">
+            <div class="content-image"></div>
+            <div class="content">
+                <h2>The leader in interactive VR</h2>
+                <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
+                    projects for some of the best companies around the globe. Our award-winning
+                    creations have transformed businesses through digital experiences that bind
+                    to their brand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREATIONS -->
+    <section id="creations" class="creations">
+        <div class="container flex flex-col">
+            <header class="flex">
+                <h2>Our creations</h2>
+                <button class="see-all md">See all</button>
+            </header>
+            <main class="card-list flex">
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-deep-earth.jpg" alt="image-deep-earth">
+                        <img class="sm" src="./images/mobile/image-deep-earth.jpg" alt="image-deep-earth">
+                    </figure>
+                    <h3>Deep earth</h3>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-night-arcade.jpg" alt="image-night-arcade">
+                        <img class="sm" src="./images/mobile/image-night-arcade.jpg" alt="image-night-arcade">
+                    </figure>
+                    <h3>Night arcade</h3>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-soccer-team.jpg" alt="image-soccer-team">
+                        <img class="sm" src="./images/mobile/image-soccer-team.jpg" alt="image-soccer-team">
+                    </figure>
+                    <h3>Soccer team VR</h3>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-grid.jpg" alt="image-grid">
+                        <img class="sm" src="./images/mobile/image-grid.jpg" alt="image-grid">
+                    </figure>
+                    <h3>The grid</h3>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-from-above.jpg" alt="image-from-above">
+                        <img class="sm" src="./images/mobile/image-from-above.jpg" alt="image-from-above">
+                    </figure>
+                    <h3>From up above VR</h3>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-pocket-borealis.jpg" alt="image-pocket-borealis">
+                        <img class="sm" src="./images/mobile/image-pocket-borealis.jpg" alt="image-pocket-borealis">
+                    </figure>
+                    <h3>Pocket borealis</h3>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-curiosity.jpg" alt="image-curiosity">
+                        <img class="sm" src="./images/mobile/image-curiosity.jpg" alt="image-curiosity">
+                    </figure>
+                    <h3>The curiosity</h3>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img class="md" src="./images/desktop/image-fisheye.jpg" alt="image-fisheye">
+                        <img class="sm" src="./images/mobile/image-fisheye.jpg" alt="image-fisheye">
+                    </figure>
+                    <h3>Make it fisheye</h3>
+                </article>
+            </main>
+            <button class="see-all sm">See all</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="container flex flex-row">
+            <div class="menu-section flex flex-col">
+                <figure>
+                    <img src="./images/logo.svg" alt="logo">
+                </figure>
+                <nav class="menu flex">
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Events</a>
+                    <a href="#">Products</a>
+                    <a href="#">Support</a>
+                </nav>
+            </div>
+            <div class="social-section flex flex-col">
+                <aside>
+                    <a href="#">
+                        <img src="./images/icon-facebook.svg" alt="icon-facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./images/icon-twitter.svg" alt="icon-twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+                    </a>
+                    <a href="#">
+                        <img src="./images/icon-instagram.svg" alt="icon-instagram">
+                    </a>
+                </aside>
+                <p>&COPY; 2021 Loopstudios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const mobileAside = document.getElementById('mobileAside');
+    let mobileMenuVisible = false;
+
+    function toggleMobileMenu(flag) {
+        mobileMenuVisible = flag;
+        if (mobileMenuVisible) {
+            mobileAside.classList.add('visible');
+        } else {
+            mobileAside.classList.remove('visible');
+        }
+    }
+</script>
+
+</html>
